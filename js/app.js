@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     images[currentIndex].classList.remove("active");
     currentIndex = (currentIndex + 1) % images.length;
     images[currentIndex].classList.add("active");
-  }, 2000); // Change image every 2 seconds
+  }, 1500); // Change image every 2 seconds
 
   const welcomePage = document.getElementById("welcome");
   const mainContent = document.getElementById("main-content");
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     welcomePage.classList.add("hidden");
     mainContent.classList.remove("hidden");
-  }, 2000); // Transition after 6 seconds
+  }, 4000); // Transition after 6 seconds
 });
 
 document.addEventListener("DOMContentLoaded", () => {
