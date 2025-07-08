@@ -7,4 +7,5 @@ const skills = [
   { src: "img/nodejs.png", alt: "Skills Icon", class: "skill-icon", name: "Node.js" },
   { src: "img/css-3.png", alt: "Skills Icon", class: "skill-icon", name: "CSS" },
   { src: "img/laravel.png", alt: "Skills Icon", class: "skill-icon", name: "Laravel" },
+  { src: "img/web.png", alt: "ASP.NET", class: "skill-icon", name: "ASP.NET" },
 ];

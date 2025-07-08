@@ -1,13 +1,6 @@
 const projects = [
   {
     src: "img/enounce.png",
-    alt: "TechSkillDB",
-    name: "TechSkillDB",
-    description: "Test",
-    language: "HTML, CSS, JavaScript, PHP, MySQL"
-  },
-  {
-    src: "img/enounce.png",
     alt: "E-Nounce",
     name: "E-nounce: An Educational AI-powered Supplementary",
     description: "An educational AI-powered supplementary platform designed to enhance learning experiences through personalized content and interactive features.",

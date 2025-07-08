@@ -1,28 +1,28 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".welcome-image");
-  let currentIndex = 0;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const images = document.querySelectorAll(".welcome-image");
+//   let currentIndex = 0;
 
-  setInterval(() => {
-    images[currentIndex].classList.remove("active");
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].classList.add("active");
-  }, 1500); // Change image every 2 seconds
+//   setInterval(() => {
+//     images[currentIndex].classList.remove("active");
+//     currentIndex = (currentIndex + 1) % images.length;
+//     images[currentIndex].classList.add("active");
+//   }, 1500); // Change image every 2 seconds
 
-  const welcomePage = document.getElementById("welcome");
-  const mainContent = document.getElementById("main-content");
+//   const welcomePage = document.getElementById("welcome");
+//   const mainContent = document.getElementById("main-content");
 
-  setTimeout(() => {
-    welcomePage.classList.add("hidden");
-    mainContent.classList.remove("hidden");
-  }, 4000); // Transition after 6 seconds
-});
+//   setTimeout(() => {
+//     welcomePage.classList.add("hidden");
+//     mainContent.classList.remove("hidden");
+//   }, 4000); // Transition after 6 seconds
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const welcomePage = document.getElementById("home");
 
   setTimeout(() => {
     welcomePage.classList.add("loaded");
-  }, 1000); // Simulate loading for 3 seconds
+  }, 1000);
 });
 
 document.addEventListener("DOMContentLoaded", () => {

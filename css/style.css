@@ -270,10 +270,10 @@ header {
   color: #fff;
   padding: 1.5em 0;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #headerskill{
+  background: unset;
   padding: unset;
 }
 
@@ -540,7 +540,7 @@ nav ul li button:hover {
 /* Nav Bar */
 .navbar {
   background: #222222;
-  padding: 3em 5em;
+  padding: 1.5em 1.5em;
 }
 
 .nav-list {
@@ -833,6 +833,11 @@ nav ul li button:hover {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+#home{
+  margin: 0 auto;
+  max-width: 1200px; /* Restricts the width */
 }
 
 /* Main Content */
@@ -1166,4 +1171,9 @@ img {
 
 #mb-12{
   margin-bottom: 10rem;
+}
+
+#nobg {
+  background: none;
+  box-sizing: unset;
 }

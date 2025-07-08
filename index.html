@@ -9,50 +9,61 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com/"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+</script>
 </head>
 
-<body>
-
-<section id="welcome" class="welcome-page">
+<body class="bg-[#1e1e1f]/70">
+<div id="vanta-bg" class="fixed inset-0 -z-10"></div>
+<!-- <section id="welcome" class="welcome-page">
   <div class="image-container">
     <img src="img/bootstrap.png" alt="Image 1" class="welcome-image active">
     <img src="img/css-3.png" alt="Image 2" class="welcome-image">
     <img src="img/html.png" alt="Image 3" class="welcome-image">
   </div>
-</section>
-
-<div id="main-content" class="main-content hidden">
-  <nav class="navbar">
+</section> -->
+<div id="main-content" class="main-content">
+  <nav class="navbar sticky top-0 z-40 bg-[#1e1e1f]/80 backdrop-blur-md shadow-md">
     <div class="navbar-container">
       <ul class="nav-list">
-        <li class="nav-item"><button class="tab-button" data-tab="home">Home</button></li>
-        <li class="nav-item"><button class="tab-button" data-tab="about">About</button></li>
-        <li class="nav-item"><button class="tab-button" data-tab="projects">Projects</button></li>
+        <li class="nav-item"><a class="tab-button" href="#home">Home</a></li>
+        <li class="nav-item"><a class="tab-button" href="#about">About</a></li>
+        <li class="nav-item"><a class="tab-button" href="#projects">Projects</a></li>
       </ul>
     </div>
   </nav>
 
-<div class="tab-content">
-  <section id="home" class="tab-pane active">
-    <main>
-      <div class="large">
-        <p class="text-amber-200">Hello, I'm</p>
-        <h1 style="font-size: 3em; margin: 0;">John Paolo</h1>
+  <!-- Home Section -->
+  <section id="home" class="py-16 min-h-screen flex items-center justify-center">
+    <main class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 w-full px-4 sm:px-8">
+      <div class="w-full max-w-xl mx-auto px-2 sm:px-4 md:px-0 text-center md:text-left">
+        <p class="text-amber-200 text-lg sm:text-xl md:text-2xl">Hello, I'm</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold m-0">John Paolo</h1>
         <div class="py-2">
-          <h1 class="typewrite gradient-text fadein-up" style="margin: 0;">
+          <h1 class="typewrite gradient-text fadein-up m-0 text-xl sm:text-2xl md:text-3xl">
             <span class="wrap"></span>
           </h1>
         </div>
-        <p class="text-white pr-4 fade-in-from-left">Welcome to My portfolio website. <span class="wave">👋🏼</span></p>
+        <p class="text-white fade-in-from-left text-base sm:text-lg md:text-xl pr-0 md:pr-4">
+          Welcome to my Technology Portfolio Website. <span class="wave">👋🏼</span>
+        </p>
       </div>
-      <div class="flex justify-center md:justify-start fadein-right">
-        <img alt="avatar" fetchpriority="high" style="width:500px" decoding="async" class="w-10/12 md:h-auto rounded-full border-4 border-amber-200 pict" src="img/profile.jpg">
+      <div class="flex justify-center md:justify-start fadein-right w-full md:w-auto">
+        <img 
+          alt="avatar" 
+          fetchpriority="high" 
+          decoding="async" 
+          class="w-40 sm:w-56 md:w-72 lg:w-80 xl:w-96 h-auto rounded-full border-4 border-amber-200 pict mx-auto md:mx-0"
+          src="img/profile.jpg"
+          style="min-width:100px; max-width:320px;"
+        >
       </div>
     </main>
   </section>
 
-  <section id="about" class="tab-pane">
-    <div class="bg-[#1e1e1f] px-5 py-5 md:px-12 md:py-10 text-left border border-[#383838] rounded-3xl text-amber-50 mx-3 mb-5">
+  <!-- About Section -->
+  <section id="about" class="py-16 min-h-screen">
+    <div class="container mx-auto px-5 md:px-12">
       <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
         About Me &nbsp;
         <div class="h-[1px] w-32 bg-amber-200 md:w-96 aos-init aos-animate"></div>
@@ -61,79 +72,79 @@
         <div class="flex justify-center">
           <img class="w-9/12 rounded-full mb-3 fadein-up" style="width:300px; height:300px; border-radius:50%; object-fit: cover;" src="img/profile.jpg">
         </div>
-        <div class="md:w-7/12" style="margin-left: 4em;">
-          <p class="mb-3 md:mb-7 fadein-right fadeins-1 text-justify">
+        <div class="md:w-7/12 md:ml-16">
+          <p class="mb-3 md:mb-7 fadein-right fadeins-1 text-justify text-amber-50">
             &nbsp; &nbsp; &nbsp; &nbsp;Hello! I'm a developer passionate about creating amazing web applications. I specialize in front-end and back-end development, delivering high-quality solutions for clients.
           </p>
-          <p class="mb-3 fadein-left fadeins-2 text-justify">
+          <p class="mb-3 fadein-left fadeins-2 text-justify text-amber-100">
             &nbsp; &nbsp; &nbsp; With over 7 years of experience in web development, I have worked on various projects ranging from e-commerce platforms to portfolio websites.
           </p>
         </div>
       </section>
     </div>
-
-    <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
-      <header id="headerskill">
+    <div class="container mx-auto px-5 md:px-12 mt-10">
+      <header id="headerskill"> 
         <div class="text-3xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
-          <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate" data-aos="zoom-in-left"
-               data-aos-duration="600"></div>
-          &nbsp; Skills
+          <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"></div>
+          &nbsp; Skills and Achievements
         </div>
       </header>
       <section id="sectionunset">
         <div>
           <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5">
             <li class="mr-2">
-            <button class="inline-block px-4 py-3 rounded-lg hover:text-white text-amber-200 bg-amber-200 bg-opacity-10">Tech Stack</button>
+              <button class="inline-block px-4 py-3 rounded-lg hover:text-white text-amber-200 bg-amber-200 bg-opacity-10">Tech Stack</button>
             </li>
             <li class="mr-2">
-            <button class="inline-block px-4 py-3 rounded-lg hover:text-white text-amber-200 bg-amber-200 bg-opacity-10">Tools</button>
+              <button class="inline-block px-4 py-3 rounded-lg hover:text-white text-amber-200 bg-amber-200 bg-opacity-10">Tools</button>
             </li>
             <li class="mr-2">
-            <button class="inline-block px-4 py-3 rounded-lg hover:text-white text-amber-200 bg-amber-200 bg-opacity-10">Awards/Achievements</button>
+              <button class="inline-block px-4 py-3 rounded-lg hover:text-white text-amber-200 bg-amber-200 bg-opacity-10">Awards/Achievements</button>
             </li>
           </ul>
         </div>
       </section>
       <div class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12">
+        <!-- Skills/Tools/Awards content will be injected here -->
       </div>
     </div>
   </section>
-  </div>
 
-  <section id="projects" class="tab-pane">
-    <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3"></div>
-    <header>
-      <div class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 min-h-screen">
+    <header id="nobg" class="flex flex-col items-center">
+      <div class="text-2xl font-bold text-white fadein-bot title-section flex items-center justify-center flex-col">
         <h4>Previous Projects</h4>
         <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
-          Explore the projects I've worked on so far
+          Explore the projects I've worked on!
         </h4>
       </div>
     </header>
     <section>
       <div>
         <div class="grid grid-cols-1 gap-4 pb-32 fade-zoom-in opacity-0">
+          <!-- project placement -->
         </div>
       </div>
     </section>
   </section>
 
-  <footer>
-    <div>
-    <h2>Connect with Me</h2>
-    <div>
-    <img src="img/github.png">
-    <img src="img/linkedin.png">
-    </div>
-    </div>
-    <div>
-    <p>&copy; 2025</p>
-    </div>
-    <div class="contact-info">
-      <h2>Contact Me</h2>
-      <p><i class="bi bi-envelope"></i> &nbsp; johnpaolotan2016@yahoo.com</p>
-      <p><i class="bi bi-telephone"></i> &nbsp; +63 916-368-9173</p>
+  <footer class="bg-slate-900 py-8 border-t border-amber-900">
+    <div class="container px-12">
+      <h2 class="text-amber-200 text-xl mb-4">Connect with Me</h2>
+      <div class="flex gap-4 mb-4">
+        <p class="text-gray-300"><i class="bi bi-envelope"></i> &nbsp; johnpaolotan2016@yahoo.com</p>
+        <p class="text-gray-300"><i class="bi bi-telephone"></i> &nbsp; +63 916-368-9173</p>
+      </div>
+      <div class="flex mb-4">
+        <a href="https://github.com/powervarris" target="_blank" rel="noopener">
+        <img src="img/github.png" class="w-8 h-8" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/john-paolo-tan-657459342/" target="_blank" rel="noopener">
+        <img src="img/linkedin.png" class="w-8 h-8" alt="LinkedIn">
+        </a>
+      </div>
+      <p class="text-gray-400">&copy; 2025</p>
     </div>
   </footer>
 </div>
@@ -142,27 +153,31 @@
 <script src="js/skills.js"></script>
 <script src="js/tools.js"></script>
 <script src="js/projects.js"></script>
+<script src="js/awards.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
 <script>
+  VANTA.NET({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0xf5f77f,
+    backgroundColor: 0x1f1f1f,
+  });
 
+  // Typewriter and skills/projects JS remains unchanged
   document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.tab-button');
-    const panes = document.querySelectorAll('.tab-pane');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const target = tab.getAttribute('data-tab');
-
-        panes.forEach(pane => {
-          pane.classList.remove('active');
-          if (pane.id === target) {
-            pane.classList.add('active');
-          }
-        });
-      });
-    });
-
-    // Typewriter effect for the Home pane
-    const toRotate = ["Full-Stack Developer", "Information Technology Graduate", "Tech Enthusiast"];
+    // Typewriter effect
+    const toRotate = ["Full-Stack Developer", "BS Information Technology", "Tech Enthusiast", "System Analyst"];
     const period = 2000;
     let txt = '';
     let loopNum = 0;
@@ -189,13 +204,12 @@
         loopNum++;
         delta = 500;
       }
-
       setTimeout(tick, delta);
     }
-
     tick();
   });
 
+  // Skills/Tools/Awards tab logic
   document.addEventListener("DOMContentLoaded", () => {
     const gridContainer = document.querySelector(".grid");
     const sectionUnset = document.querySelector("#sectionunset");
@@ -203,7 +217,7 @@
 
     const loadContent = (data) => {
       gridContainer.classList.remove("fade-in");
-      gridContainer.innerHTML = ""; // Clear existing content
+      gridContainer.innerHTML = "";
       data.forEach(item => {
         const itemDiv = document.createElement("div");
         itemDiv.className = "item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3";
@@ -229,21 +243,24 @@
     buttonSkill.forEach(button => {
       button.addEventListener("click", () => {
         const tab = button.textContent.trim();
-        console.log(`Loading content for tab: ${tab}`);
         if (tab === "Tech Stack") {
           loadContent(skills);
         } else if (tab === "Tools") {
           loadContent(tools);
         }
+        else if (tab === "Awards/Achievements") {
+          loadContent(awards);
+        }
       });
     });
   });
 
+  // Projects logic
   document.addEventListener("DOMContentLoaded", () => {
     const gridContainer = document.querySelector("#projects .grid");
 
     const loadProjects = (data) => {
-      gridContainer.innerHTML = ""; // Clear existing content
+      gridContainer.innerHTML = "";
 
       data.forEach((item, index) => {
         const projectDiv = document.createElement("div");
@@ -277,7 +294,7 @@
     loadProjects(projects); // Replace `projects` with your actual data source
   });
 
-
+  // Fade-in for projects grid
   document.addEventListener("DOMContentLoaded", () => {
     const projectElements = document.querySelectorAll("#projects .grid");
 
@@ -295,8 +312,6 @@
 
     projectElements.forEach((element) => observer.observe(element));
   });
-
 </script>
 </body>
-
 </html>
